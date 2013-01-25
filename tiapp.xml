@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="ti.android.runtime">rhino</property>
+    <deployment-targets>
+        <target device="mobileweb">false</target>
+        <target device="iphone">false</target>
+        <target device="ipad">false</target>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+    </deployment-targets>
+    <sdk-version>2.1.3.GA</sdk-version>
+    <id>me.airy.muziq</id>
+    <name>Muziq</name>
+    <version>1.0</version>
+    <publisher>tom</publisher>
+    <url>http://airy.me</url>
+    <description>not specified</description>
+    <copyright>2012 by tom</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>e67c4bb7-cfc0-48c0-a036-19181593ef4e</guid>
+    <property name="ti.ui.defaultunit">dp</property>
+    <property name="ti.android.threadstacksize" type="int">32768</property>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+    	<manifest>
+    		<uses-permission android:name="android.permissions.WRITE_EXTERNAL_STORAGE" />
+    	</manifest>
+    	<activities>
+    		<activity url="app.js">
+    			<intent-filter>
+    				<action android:name="android.intent.action.MAIN" />
+    				<category android:name="android.intent.category.LAUNCHER" />
+    				<category android:name="android.intent.category.DEFAULT" />
+    			</intent-filter>
+    		</activity>
+    	</activities>
+    	
+    	
+    </android>
+    	
+    	
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules/>
+</ti:app>
